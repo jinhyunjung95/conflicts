@@ -4,6 +4,13 @@ st._is_running_with_streamlit = False
 from st_pages import Page, show_pages, add_page_title
 from PIL import Image
 
+import os
+
+script_directory = os.path.dirname(os.path.abspath(__file__))
+image_path = os.path.join(script_directory, 'mainpic.png')
+
+image = Image.open(image_path)
+
 
 def set_background():
     # Set background image using custom CSS
