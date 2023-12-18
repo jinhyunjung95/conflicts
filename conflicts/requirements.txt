@@ -1,1 +1,5 @@
 st_pages
+Pillow==8.4.0
+Pillow>=8.4.0
+--no-binary :all:
+Pillow
